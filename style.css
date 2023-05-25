@@ -1,0 +1,107 @@
+body {
+    font-family: Avenir, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+.hero {
+    background-color: #274156;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 50px 0px 0px;
+}
+
+.mainlogo {
+    width: 500px;
+    height: auto;
+}
+
+.fonction {
+    color: #2a2a2a;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.container {
+    background-color: #274156;
+    color: #f7fff7;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 0px 0px 75px;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 3px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 8px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a2a;
+    color: #f9f9f9;
+}
+
+.bottom {
+    background-color: #F7FFF7;
+    color:#274156;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+
+.titre {
+    font-weight: 800;
+    font-size:x-large;
+    font-variant: small-caps;
+}
+
+.demarche {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+.demarcheimg {
+    width: 400px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.header {
+    background-color: #F7FFF7;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+    color:#274156;
+    margin: 0px;
+    padding: 35px 0px;
+}
+
+li {
+    display: inline;
+    padding: 0px 25px;
+}
+
+.logoligne {
+    height: 100px;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer {
+    background-color: #274156;
+    color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
