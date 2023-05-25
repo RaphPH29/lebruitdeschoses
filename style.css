@@ -71,6 +71,8 @@ body {
 }
 
 .textedemarche {
+    width: 600px;
+    height: auto;
     text-align: justify;
 }
 
