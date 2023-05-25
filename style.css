@@ -51,7 +51,7 @@ body {
     background-color: #F7FFF7;
     color:#274156;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 100px;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 
 .textedemarche {
-    width: 600px;
+    width: 500px;
     height: auto;
     text-align: justify;
 }
