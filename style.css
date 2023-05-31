@@ -47,6 +47,53 @@ li {
 .middle {
     background-color: #F7FFF7;
     color:#274156;
+}
+
+.artistes {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.containerart {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imgartistes {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100%;
+}
+
+.JoHuard {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.RPH {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.nom {
+    font-weight: 800;
+    padding: 8px 0px 8px 0px;
+}
+.bio {
+    text-align: justify;
+    font-size: 2.5vmin;
+}
+
+.containerdem {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -73,14 +120,14 @@ li {
     height: 100%;
     max-width: 400px;
     text-align: justify;
-    font-size: 2vmin;
+    font-size: 2.5vmin;
 }
 
 .demarcheimg {
     max-width: 40%;
     height: 30%;
     border-radius: 5%;
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 .footer {
