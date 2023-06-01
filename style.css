@@ -49,6 +49,25 @@ li {
     color:#274156;
 }
 
+.quisommesnous {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerqsn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texteqsn {
+    width: 400px;
+}
+
+.imgvaisselle {
+    max-width: 400px;
+    height: 100%;
+}
+
 .artistes {
     display: flex;
     flex-direction: column;
