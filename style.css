@@ -109,10 +109,14 @@ nav ul li a{
 
 .container{
     background-color: #f7fff7;
+    display: flex;
+}
+
+.apropos{
+    display: flex;
 }
 
 .dma{
-    padding: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,4 +150,39 @@ nav ul li a{
 
 .sticky-visible {
     top: 0; /* Afficher la barre de navigation en position sticky */
+}
+
+.apropos h1{
+    padding-top: 75px;
+    color: #091f32;
+}
+
+.artcont{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 75px;
+}
+
+.rph, .jh{
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgartistes{
+    max-width: 400px;
+    height: auto;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.nom{
+    font-weight: 600;
+}
+
+.bio{
+    max-width: 400px;
+    text-align: justify;
+    align-self: center;
 }
