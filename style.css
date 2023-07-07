@@ -127,3 +127,14 @@ nav ul li a{
     width: 30%;
     margin-left: 20px;
   }
+
+  .sticky-bar {
+    background-color: #f7fff7;
+    position: sticky;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+}
+
+.sticky-visible {
+    top: 0; /* Afficher la barre de navigation en position sticky */
+}
