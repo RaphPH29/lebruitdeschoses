@@ -8,7 +8,7 @@
     <title>Le bruit des choses</title>
 </head>
 <body>
-    <script src="./script.js"></script>
+    
     <div class="hero">
 
         <video autoplay loop muted plays-inline class="back-video">
@@ -33,37 +33,93 @@
     </nav>
 
     <div class="container">
-        <div class="apropos" id="apropos">
-            <div class="dma">
-                <h1>Qui sommes-nous?</h1>
-                <div class="dmacont">
-                    <p class="paragr"><b>Le bruit des choses</b> crée, produit et diffuse du contenu original dans le domaine des arts nouveaux. 
-                        Il s'agit d'un ensemble à géométrie variable, principalement composé de Jonathan Huard et de Raphaël Plante-Hétu.<br><br>  
-                        Sa mission est de mettre en valeur la musique percussive contemporaine par la recherche, la création et la diffusion de contenu original dans le domaine des arts nouveaux.
-                    </p>
-                    <img class="imgvaisselle" src="./vaisselle.jpg" alt="Photo d'un setup de vaisselle'">
-                </div>
-                
-                <h1>Artistes</h1>
-                
-                    <div class="artcont">
-                        <div class="rph">
-                            <img class="imgartistes" src="./RaphPH.jpg" alt="Photo de Raphaël Plante-Hétu">
-                            <div class="nom">Raphaël Plante-Hétu, percussionniste et co-directeur artistique</div>
-                            <div class="bio">Diplômé du Conservatoire du musique de Québec, Raphaël Plante-Hétu est un percussionniste classique, spécialisé dans les percussions à clavier. En tant qu'artiste de la relève passionné par la musique contemporaine, il s'engage à créer et à faire rayonner des œuvres novatrices et captivantes, tout en démocratisant les percussions en tant qu'instrument soliste.</div>
-                        </div>
-        
-                        <div class="jh">
-                            <img class="imgartistes" src="./JoHuard.jpg" alt="Photo de Jonathan Huard">
-                            <div class="nom">Jonathan Huard, percussionniste et co-directeur artistique</div>
-                            <div class="bio">Après un baccalauréat en percussions au Conservatoire de musique de Rimouski et une maîtrise en musique de chambre au Conservatoire de musique de Québec, Jonathan Huard se consacre à la musique actuelle et à l’improvisation. Particulièrement intéressé par la construction des langages et la possibilité de repousser les limites sonores des instruments de percussions, il crée des univers uniques en explorant les possibles poétiques de l'union des mots, des bruits et des sons. Son plus récent projet solo Le corps du jour mettra en scène son premier recueil de poésie.</div>
-                        </div>
+        <div class="carousel">
+            <div class="slider">
+                <section>
+                    <div class="quisommes-nous">
+                        <div class="contenu">
+                            <h1>Qui sommes-nous</h1>
+                            <p> Le bruit des choses crée, produit et diffuse du contenu original dans le domaine des arts nouveaux. 
+                                Il s'agit d'un ensemble à géométrie variable, principalement composé de Jonathan Huard et de Raphaël Plante-Hétu.
+                                
+                                Sa mission est de mettre en valeur la musique percussive contemporaine par la recherche, la création et la diffusion de contenu original dans le domaine des arts nouveaux.</p>
+                        </div>    
+                        <img class="imgvaisselle" src="./vaisselle.jpg" alt="vaisselle sur table">
                     </div>
+                </section>
+                <section>
+                    <div class="artistes">
+                        <div class="RPH">
+                           <img src="./RaphPH.jpg" alt="Raphaël Plante-Hétu" class="imgart">
+                           <h1>Raphaël Plante-Hétu, percussioniste et co-directeur artistique</h1>
+                           <div class="bio">
+                                Diplômé du Conservatoire du musique de Québec, Raphaël Plante-Hétu est un percussionniste classique, spécialisé dans les percussions à clavier. En tant qu'artiste de la relève passionné par la musique contemporaine, il s'engage à créer et à faire rayonner des œuvres novatrices et captivantes, tout en démocratisant les percussions en tant qu'instrument soliste.
+                           </div>
+                        </div>
+                        <div class="JH">
+                            <img src="./JoHuard.jpg" alt="Jonathan Huard" class="imgart">
+                            <h1>Jonathan Huard, percussioniste et co-directeur artistique</h1>
+                            <div class="bio">
+                                Après un baccalauréat en percussions au Conservatoire de musique de Rimouski et une maîtrise en musique de chambre au Conservatoire de musique de Québec, Jonathan Huard se consacre à la musique actuelle et à l’improvisation. Particulièrement intéressé par la construction des langages et la possibilité de repousser les limites sonores des instruments de percussions, il crée des univers uniques en explorant les possibles poétiques de l'union des mots, des bruits et des sons. Son plus récent projet solo Le corps du jour mettra en scène son premier recueil de poésie.
+                            </div>
+                        </div>     
+                    </div>
+                </section>
+                <section>content for section 3</section>
+                <section>content for section 4</section>
+            </div>
+            <div class="controls">
+                <span class="arrow left">
+                    <i class="material-icons">
+                        keyboard_arrow_left
+                    </i>
+                </span>
+                <span class="arrow right">
+                    <i class="material-icons">
+                        keyboard_arrow_right
+                    </i>
+                </span>
+                <ul>
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
     </div>
 
 
-
+    <script src="./script.js" ></script>
 </body>
 </html>
+
+<!-- Caroussel vierge:
+    <div class="container">
+        <div class="carousel">
+            <div class="slider">
+                <section>content for section 1</section>
+                <section>content for section 2</section>
+                <section>content for section 3</section>
+                <section>content for section 4</section>
+            </div>
+            <div class="controls">
+                <span class="arrow left">
+                    <i class="material-icons">
+                        keyboard_arrow_left
+                    </i>
+                </span>
+                <span class="arrow right">
+                    <i class="material-icons">
+                        keyboard_arrow_right
+                    </i>
+                </span>
+                <ul>
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>-->

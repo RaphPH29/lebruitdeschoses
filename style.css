@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Material+Icons);
+
 *{
     margin: 0;
     padding: 0;
@@ -49,7 +51,7 @@ nav ul li a{
     position: relative;
     opacity: 0; /* Commence avec une opacité de 0 */
     animation: fade-in 5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; /* Utilise l'animation fade-in */
-    animation-delay: 0s;
+    animation-delay: 10s;
 }
   
   @keyframes fade-in {
@@ -112,40 +114,6 @@ nav ul li a{
     }
 }
 
-.container{
-    background-color: #f7fff7;
-    display: flex;
-}
-
-.apropos{
-    display: flex;
-}
-
-.dma{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.dmacont {
-    display: flex;
-    justify-content: space-around;
-    padding: 24px 15%;
-  }
-  
-  .paragr {
-    flex: 1;
-    max-width: 30%;
-    text-align: justify;
-  }
-  
-  .imgvaisselle {
-    height: auto;
-    width: 30%;
-    margin-left: 20px;
-    flex-shrink: 0;
-  }
-
   .sticky-bar {
     background-color: #f7fff7;
     position: sticky;
@@ -157,37 +125,128 @@ nav ul li a{
     top: 0; /* Afficher la barre de navigation en position sticky */
 }
 
-.apropos h1{
-    padding-top: 75px;
-    color: #091f32;
-}
+/*-------DÉBUT DU CAROUSSEL---------*/
 
-.artcont{
-    display: flex;
+.container{
     width: 100%;
-    justify-content: space-around;
+    background-color: #f7fff7;
+    display: flex;
+    justify-content: center;
     padding-bottom: 75px;
 }
 
-.rph, .jh{
-    padding-top: 75px;
+.carousel {
+ 
+    height: auto;
+    width: 80%;
+    position:relative;
+    overflow: hidden;
+}
+
+.slider{
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.3s;
+}
+
+.slider section{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.controls .arrow i{
+ font-size: 75px;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #091f32;
+    border-radius: 50px;
+    margin: 10px;
+    background: #091f32;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background: transparent;
+} 
+
+.quisommes-nous{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenu{
     display: flex;
     flex-direction: column;
-}
-
-.imgartistes{
-    max-width: 400px;
-    height: auto;
-    border-radius: 100%;
-    align-self: center;
-}
-
-.nom{
-    font-weight: 600;
-}
-
-.bio{
-    max-width: 400px;
+    width: 30%;
     text-align: justify;
     align-self: center;
+}
+
+.contenu h1{
+    padding-bottom: 5px;
+}
+
+.imgvaisselle{
+    width: 30%;
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.artistes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.RPH,
+.JH{
+    width: 20%;
+    text-align: justify;
+}
+
+.RPH h1, .JH h1 {
+    font-size: 18px;
+}
+
+
+.imgart{
+    border-radius: 100%;
+    width: 100%;
 }
