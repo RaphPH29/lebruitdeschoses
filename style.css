@@ -1,161 +1,118 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Avenir, sans-serif;
 }
 
-.hero {
-    background-color: #274156;
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: #f7fff7;
+    position: relative;
+    padding: 0 5%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 50px 0px 0px;
-    height: auto;
+    justify-content: center;
 }
 
-.mainlogo {
-    height: 500px;
-    max-width: 100%;
-}
-
-.header {
-    background-color: #F7FFF7;
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 3%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.logoligne {
-    height: 100px;
-    max-width: 100%;
-    padding: 0px;
-    margin: 0px;
+nav .logo{
+    width: 250px;
 }
 
-ul {
-    list-style-type: none;
-    color:#274156;
-    margin: 0px;
-    padding: 35px 0px;
-    display: flex;
-    flex-wrap: wrap;
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
 }
 
-li {
-    display: inline;
-    padding: 0px 25px;
-    font-size: 2.5vmin;
+nav ul li a{
+    text-decoration: none;
+    color: #091f32;
+    font-size: 18px;
 }
 
-.middle {
-    background-color: #F7FFF7;
-    color:#274156;
+.content{
+    text-align: center;
+    position: relative;
+    opacity: 0; /* Commence avec une opacité de 0 */
+    animation: fade-in 5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; /* Utilise l'animation fade-in */
+    animation-delay: 10s;
+}
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0; /* Commence avec une opacité de 0 */
+    }
+    to {
+      opacity: 1; /* Termine avec une opacité de 1 */
+    }
+  }
+ 
+
+.content h1{
+    font-size: 100px;
+    color: #f7fff7;
+    font-weight: 600;
 }
 
-.quisommesnous {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0px 75px 0px;
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #f7fff7;
+    font-size: 24px;
+    border: 2px solid #f7fff7;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 0px;
 }
 
-.containerqsn {
-    display: flex;
-    justify-content: space-evenly;
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /*z-index: -1;*/
 }
 
-.texteqsn {
-    width: 500px;
-    font-size: 2.5vmin;
-    text-align: justify;
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
 }
 
-.imgvaisselle {
-    max-width: 400px;
-    height: 100%;
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
 }
 
-.artistes {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    flex-wrap: wrap;
+.container{
+    background-color: #f7fff7;
 }
 
-.containerart {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.dma{
+    padding: 75px;
 }
 
-.imgartistes {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 100%;
-}
-
-.JoHuard {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 16px;
-}
-
-.RPH {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 16px;
-}
-
-.nom {
-    font-weight: 800;
-    padding: 8px 0px 8px 0px;
-}
-.bio {
-    text-align: justify;
-    font-size: 2.5vmin;
-}
-
-.containerdem {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 10%;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.demarche {
+.dmacont{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
-.titre {
-    font-weight: 800;
-    font-size: 4vmin;
-    font-variant: small-caps;
-    align-self: center;
-    padding-bottom: 10px;
-}
-
-.textedemarche {
-    height: 100%;
-    max-width: 850px;
-    text-align: justify;
-    font-size: 2.5vmin;
-}
-
-.demarcheimg {
-    max-width: 40%;
-    height: 30%;
-    border-radius: 5%;
-    margin-top: 15px;
-}
-
-.footer {
-    background-color: #274156;
-    color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
+.imgvaisselle{
+    height: auto;
+    width: 30%;
 }
