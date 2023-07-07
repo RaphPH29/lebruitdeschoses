@@ -75,7 +75,7 @@ nav ul li a{
     padding-bottom: 20px;
 }
 
-.content a{
+.button{
     text-decoration: none;
     display: inline-block;
     color: #f7fff7;
@@ -84,13 +84,18 @@ nav ul li a{
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 0px;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background-color: #f7fff7;
+    color: #091f32;
 }
 
 .back-video{
     position: absolute;
     right: 0;
     bottom: 0;
-    /*z-index: -1;*/
 }
 
 @media (min-aspect-ratio: 16/9){
