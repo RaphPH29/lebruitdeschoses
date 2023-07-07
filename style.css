@@ -105,14 +105,25 @@ nav ul li a{
 
 .dma{
     padding: 75px;
-}
-
-.dmacont{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.imgvaisselle{
+.dmacont {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 24px;
+  }
+  
+  .paragr {
+    flex: 1;
+    max-width: 30%;
+    text-align: justify;
+  }
+  
+  .imgvaisselle {
     height: auto;
     width: 30%;
-}
+    margin-left: 20px;
+  }
